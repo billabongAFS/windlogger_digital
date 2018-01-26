@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Windlogger digital"
-Date "2017-03-28"
-Rev "1.1.1"
+Date "2017-07-10"
+Rev "1.2.0"
 Comp "ALEEA"
 Comment1 "LONGUET Gilles"
 Comment2 "AGPL3"
@@ -120,50 +120,6 @@ Text Label 3875 2175 0    60   ~ 0
 RESET
 Text Notes 3775 3175 0    60   ~ 0
 Main crystal
-$Comp
-L Crystal X2
-U 1 1 5875302A
-P 7225 4675
-F 0 "X2" V 7425 4625 60  0000 C CNN
-F 1 "32.768Hz" V 7000 4650 60  0000 C CNN
-F 2 "Crystals:Crystal_Round_Horizontal_3mm_BigPad" H 7225 4675 60  0001 C CNN
-F 3 "" H 7225 4675 60  0000 C CNN
-	1    7225 4675
-	0    1    -1   0   
-$EndComp
-$Comp
-L C C7
-U 1 1 58753031
-P 7550 4525
-F 0 "C7" H 7550 4625 40  0000 L CNN
-F 1 "12p" H 7556 4440 40  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 7588 4375 30  0001 C CNN
-F 3 "" H 7550 4525 60  0000 C CNN
-	1    7550 4525
-	0    1    1    0   
-$EndComp
-$Comp
-L C C8
-U 1 1 58753038
-P 7550 4825
-F 0 "C8" H 7550 4925 40  0000 L CNN
-F 1 "12p" H 7556 4740 40  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 7588 4675 30  0001 C CNN
-F 3 "" H 7550 4825 60  0000 C CNN
-	1    7550 4825
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR08
-U 1 1 5875303F
-P 7825 4675
-F 0 "#PWR08" H 7825 4425 50  0001 C CNN
-F 1 "GND" H 7825 4525 50  0000 C CNN
-F 2 "" H 7825 4675 50  0000 C CNN
-F 3 "" H 7825 4675 50  0000 C CNN
-	1    7825 4675
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR09
 U 1 1 58753045
@@ -310,28 +266,7 @@ F 3 "" H 5175 1725 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6975 4575 6975 4525
-Wire Wire Line
-	6975 4525 7400 4525
-Wire Wire Line
-	6975 4825 7400 4825
-Wire Wire Line
-	6975 4675 6975 4825
-Connection ~ 7225 4525
-Connection ~ 7225 4825
-Wire Wire Line
-	7725 4825 7700 4825
-Wire Wire Line
-	7725 4525 7725 4825
-Wire Wire Line
-	7725 4525 7700 4525
-Wire Wire Line
-	7825 4675 7725 4675
-Connection ~ 7725 4675
-Wire Wire Line
 	2875 2650 2875 2600
-Text Notes 7200 4350 0    60   ~ 0
-RTC crystal
 Text Notes 2600 3250 0    60   ~ 0
 Reset button
 Wire Wire Line
@@ -532,8 +467,8 @@ Wire Wire Line
 Wire Wire Line
 	2700 5625 2400 5625
 Connection ~ 2400 5625
-Text Notes 7950 4550 0    60   ~ 0
-Vérifier si on peut trouver un quartz avec condensateur 6pF dans ce cas pas besoin de C externe
 Text Notes 2350 1150 0    60   ~ 0
 ajouter une pile avec une comparateur pour isoler le micro lorsqu'aucune source d'alimentation n'est disponible pour que le rtc continue à tourner
+Text Notes 7175 4650 0    60   ~ 0
+FREE
 $EndSCHEMATC

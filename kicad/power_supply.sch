@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "Windlogger digital"
-Date "2017-03-28"
-Rev "1.1.1"
+Date "2017-07-10"
+Rev "1.2.0"
 Comp "ALEEA"
 Comment1 "LONGUET Gilles"
 Comment2 "AGPL3"
@@ -50,9 +50,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 2050 1575 0    60   Input ~ 0
 UDC
-Text HLabel 1150 2925 0    60   Input ~ 0
+Text HLabel 2050 2425 0    60   Input ~ 0
 Uac_hi
-Text HLabel 2125 2925 2    60   Input ~ 0
+Text HLabel 1675 3050 2    60   Input ~ 0
 Uac_lo
 $Comp
 L GND #PWR039
@@ -318,23 +318,23 @@ $EndComp
 $Comp
 L CP C14
 U 1 1 58B7472E
-P 3800 2750
-F 0 "C14" H 3825 2850 50  0000 L CNN
-F 1 "120u" H 3825 2650 50  0000 L CNN
-F 2 "digital:condensator_horizontal_8_11_5" H 3838 2600 50  0001 C CNN
-F 3 "" H 3800 2750 50  0000 C CNN
-	1    3800 2750
+P 4000 2750
+F 0 "C14" H 4025 2850 50  0000 L CNN
+F 1 "120u" H 4025 2650 50  0000 L CNN
+F 2 "digital:condensator_horizontal_8_11_5" H 4038 2600 50  0001 C CNN
+F 3 "" H 4000 2750 50  0000 C CNN
+	1    4000 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L GNDPWR #PWR049
 U 1 1 58B74994
-P 3800 3175
-F 0 "#PWR049" H 3800 2975 50  0001 C CNN
-F 1 "GNDPWR" H 3800 3045 50  0000 C CNN
-F 2 "" H 3800 3125 50  0000 C CNN
-F 3 "" H 3800 3125 50  0000 C CNN
-	1    3800 3175
+P 4000 3175
+F 0 "#PWR049" H 4000 2975 50  0001 C CNN
+F 1 "GNDPWR" H 4000 3045 50  0000 C CNN
+F 2 "" H 4000 3125 50  0000 C CNN
+F 3 "" H 4000 3125 50  0000 C CNN
+	1    4000 3175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -518,12 +518,10 @@ Wire Wire Line
 	2125 7075 2125 7025
 Connection ~ 1775 7075
 Wire Wire Line
-	3100 2025 4150 2025
+	4000 2600 4000 2025
+Connection ~ 4000 2025
 Wire Wire Line
-	3800 2600 3800 2025
-Connection ~ 3800 2025
-Wire Wire Line
-	3800 3175 3800 2900
+	4000 3175 4000 2900
 Wire Wire Line
 	4650 3175 4650 2625
 Wire Wire Line
@@ -679,33 +677,12 @@ Wire Wire Line
 	3150 1925 3150 1575
 Wire Wire Line
 	3150 1575 2050 1575
-$Comp
-L GNDPWR #PWR057
-U 1 1 58B59717
-P 1625 3450
-F 0 "#PWR057" H 1625 3250 50  0001 C CNN
-F 1 "GNDPWR" H 1625 3320 50  0000 C CNN
-F 2 "" H 1625 3400 50  0000 C CNN
-F 3 "" H 1625 3400 50  0000 C CNN
-	1    1625 3450
-	1    0    0    -1  
-$EndComp
 Text HLabel 1400 3425 0    60   Input ~ 0
 GND_PWR
 Wire Wire Line
 	3100 2125 3150 2125
 Wire Wire Line
-	3150 2125 3150 2400
-Wire Wire Line
-	3150 2400 1625 2400
-Wire Wire Line
-	1625 2400 1625 2525
-Wire Wire Line
-	1150 2925 1400 2925
-Wire Wire Line
-	1800 2925 2125 2925
-Wire Wire Line
-	1625 3325 1625 3450
+	3150 2125 3150 2425
 Wire Wire Line
 	1400 3425 2050 3425
 Connection ~ 1625 3425
@@ -859,84 +836,28 @@ $EndComp
 $Comp
 L D_Schottky D3
 U 1 1 58B82BAA
-P 1400 2725
-F 0 "D3" H 1400 2825 50  0000 C CNN
-F 1 "SR5100" H 1400 2625 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 1400 2725 50  0001 C CNN
-F 3 "" H 1400 2725 50  0000 C CNN
-	1    1400 2725
-	0    1    1    0   
+P 3375 2025
+F 0 "D3" H 3375 2125 50  0000 C CNN
+F 1 "SR5100" H 3375 1925 50  0000 C CNN
+F 2 "digital:Diode_DO-27_Horizontal_RM12" H 3375 2025 50  0001 C CNN
+F 3 "" H 3375 2025 50  0000 C CNN
+	1    3375 2025
+	-1   0    0    1   
 $EndComp
-$Comp
-L D_Schottky D4
-U 1 1 58B82C46
-P 1800 2725
-F 0 "D4" H 1800 2825 50  0000 C CNN
-F 1 "SR5100" H 1800 2625 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 1800 2725 50  0001 C CNN
-F 3 "" H 1800 2725 50  0000 C CNN
-	1    1800 2725
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Schottky D6
-U 1 1 58B82CFA
-P 1400 3100
-F 0 "D6" H 1400 3200 50  0000 C CNN
-F 1 "SR5100" H 1400 3000 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 1400 3100 50  0001 C CNN
-F 3 "" H 1400 3100 50  0000 C CNN
-	1    1400 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Schottky D7
-U 1 1 58B82D99
-P 1800 3100
-F 0 "D7" H 1800 3200 50  0000 C CNN
-F 1 "SR5100" H 1800 3000 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 1800 3100 50  0001 C CNN
-F 3 "" H 1800 3100 50  0000 C CNN
-	1    1800 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 3325 1800 3325
-Wire Wire Line
-	1400 3325 1400 3250
-Wire Wire Line
-	1800 3325 1800 3250
-Connection ~ 1625 3325
-Wire Wire Line
-	1800 2875 1800 2950
-Connection ~ 1800 2925
-Wire Wire Line
-	1400 2875 1400 2950
-Connection ~ 1400 2925
-Wire Wire Line
-	1800 2525 1800 2575
-Wire Wire Line
-	1400 2525 1800 2525
-Wire Wire Line
-	1400 2575 1400 2525
-Connection ~ 1625 2525
 NoConn ~ 4150 2225
 NoConn ~ 4150 2325
 NoConn ~ 4150 2425
 $Comp
 L PWR_FLAG #FLG060
 U 1 1 58B8AAEC
-P 3425 2000
-F 0 "#FLG060" H 3425 2095 50  0001 C CNN
-F 1 "PWR_FLAG" H 3425 2180 50  0000 C CNN
-F 2 "" H 3425 2000 50  0000 C CNN
-F 3 "" H 3425 2000 50  0000 C CNN
-	1    3425 2000
+P 4000 2025
+F 0 "#FLG060" H 4000 2120 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 2205 50  0000 C CNN
+F 2 "" H 4000 2025 50  0000 C CNN
+F 3 "" H 4000 2025 50  0000 C CNN
+	1    4000 2025
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3425 2000 3425 2025
-Connection ~ 3425 2025
 $Comp
 L GND #PWR061
 U 1 1 58B8C169
@@ -1097,6 +1018,25 @@ Wire Wire Line
 Connection ~ 4025 5650
 Text Label 1675 4775 2    60   ~ 0
 Vin_PWR
-Text Notes 3475 2475 1    60   ~ 0
-move D after jumper
+$Comp
+L GNDPWR #PWR057
+U 1 1 58B59717
+P 1625 3575
+F 0 "#PWR057" H 1625 3375 50  0001 C CNN
+F 1 "GNDPWR" H 1625 3445 50  0000 C CNN
+F 2 "" H 1625 3525 50  0000 C CNN
+F 3 "" H 1625 3525 50  0000 C CNN
+	1    1625 3575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 3050 1625 3050
+Wire Wire Line
+	1625 3050 1625 3575
+Wire Wire Line
+	3150 2425 2050 2425
+Wire Wire Line
+	3100 2025 3225 2025
+Wire Wire Line
+	3525 2025 4150 2025
 $EndSCHEMATC

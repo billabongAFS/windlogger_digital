@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "Windlogger digital"
-Date "2017-03-28"
-Rev "1.1.1"
+Date "2017-07-10"
+Rev "1.2.0"
 Comp "ALEEA"
 Comment1 "LONGUET Gilles"
 Comment2 "AGPL3"
