@@ -19,3 +19,34 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Temporary files in the sub kicad repo
+kicad/*.000
+kicad/*.bak
+kicad/*.bck
+kicad/*.kicad_pcb-bak
+kicad/*~
+kicad/_autosave-*
+kicad/*.tmp
+
+# Netlist files (exported from Eeschema)
+kicad/*.net
+
+# Autorouter files (exported from Pcbnew)
+kicad/*.dsn
+kicad/*.ses
+
+# Exported BOM files
+kicad/*.xml
+kicad/*.csv
+
+# For simulation done with LTSpice
+
+LTSpice/*.net
+LTSpice/*.op
+LTSpice/*.raw
+LTSpice/*.lnk
+LTSpice/*.log
+LTSpice/*.ipynd_checkpoints
+LTSpice/*checkpoint.ipynb
+LTSpice/*.csv
