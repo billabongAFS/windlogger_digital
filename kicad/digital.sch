@@ -795,4 +795,15 @@ Text GLabel 8975 5675 0    60   Input ~ 0
 USBVCC
 Text Notes 9875 6175 0    60   ~ 0
 +5V\nGND\nTX0\nRX0\nDTR\n3V3
+Text Notes 2850 6400 0    60   ~ 0
+ajouter le rtc + pile sur la carte
+Text Notes 2850 6550 0    60   ~ 0
+agrandirles pastilles de trous traversants
+Wire Wire Line
+	4850 3250 4850 2750
+Wire Wire Line
+	4850 2750 5700 2750
+Connection ~ 4850 3250
+Text Label 5700 2750 0    60   ~ 0
+ck_rtc
 $EndSCHEMATC

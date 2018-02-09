@@ -1039,4 +1039,12 @@ Wire Wire Line
 	3100 2025 3225 2025
 Wire Wire Line
 	3525 2025 4150 2025
+Text Notes 3000 3600 0    60   ~ 0
+passer en CMS pour la diode
+Text Notes 5350 1900 0    60   ~ 0
+ajouter un point test
+Text Notes 5050 3800 0    60   ~ 0
+le 3v3 doit toujours être présent donc plutot séparer l'alim seulement pour le hacheur 5V\najouter un connecteur 5V pour alim direct
+Text Notes 8900 2850 0    60   ~ 0
+changer l'empreinte
 $EndSCHEMATC
