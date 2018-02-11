@@ -353,9 +353,9 @@ L D_Schottky D5
 U 1 1 58B74F4B
 P 5425 2925
 F 0 "D5" H 5425 3025 50  0000 C CNN
-F 1 "SR5100" H 5425 2825 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 5425 2925 50  0001 C CNN
-F 3 "" H 5425 2925 50  0000 C CNN
+F 1 "MBRS540T3G" H 5425 2825 50  0000 C CNN
+F 2 "Diodes_SMD:SMC_Handsoldering" H 5425 2925 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/154f/0900766b8154f4f3.pdf" H 5425 2925 50  0001 C CNN
 	1    5425 2925
 	0    1    1    0   
 $EndComp
@@ -833,17 +833,6 @@ F 3 "" H 2375 5400 50  0000 C CNN
 	1    2375 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L D_Schottky D3
-U 1 1 58B82BAA
-P 3375 2025
-F 0 "D3" H 3375 2125 50  0000 C CNN
-F 1 "SR5100" H 3375 1925 50  0000 C CNN
-F 2 "digital:Diode_DO-27_Horizontal_RM12" H 3375 2025 50  0001 C CNN
-F 3 "" H 3375 2025 50  0000 C CNN
-	1    3375 2025
-	-1   0    0    1   
-$EndComp
 NoConn ~ 4150 2225
 NoConn ~ 4150 2325
 NoConn ~ 4150 2425
@@ -1047,4 +1036,15 @@ Text Notes 5050 3800 0    60   ~ 0
 le 3v3 doit toujours être présent donc plutot séparer l'alim seulement pour le hacheur 5V\najouter un connecteur 5V pour alim direct
 Text Notes 8900 2850 0    60   ~ 0
 changer l'empreinte
+$Comp
+L D_Schottky D3
+U 1 1 5A806E74
+P 3375 2025
+F 0 "D3" H 3375 2125 50  0000 C CNN
+F 1 "MBRS540T3G" H 3375 1925 50  0000 C CNN
+F 2 "Diodes_SMD:SMC_Handsoldering" H 3375 2025 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/154f/0900766b8154f4f3.pdf" H 3375 2025 50  0001 C CNN
+	1    3375 2025
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
