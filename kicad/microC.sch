@@ -213,16 +213,22 @@ Wire Wire Line
 Wire Wire Line
 	5075 5875 5075 5900
 Wire Wire Line
-	6275 4575 6975 4575
+	6275 4575 6525 4575
 Wire Wire Line
-	6275 4675 6975 4675
+	6275 4675 6525 4675
 Wire Wire Line
 	5125 5900 5125 5950
 Connection ~ 3275 2175
 Wire Wire Line
 	2875 2175 2875 2300
 Wire Wire Line
-	2725 2175 4275 2175
+	2725 2175 2875 2175
+Wire Wire Line
+	2875 2175 3275 2175
+Wire Wire Line
+	3275 2175 3800 2175
+Wire Wire Line
+	3800 2175 4275 2175
 Wire Wire Line
 	3975 3375 3975 3450
 Wire Wire Line
@@ -230,19 +236,25 @@ Wire Wire Line
 Wire Wire Line
 	3275 1775 3275 1800
 Wire Wire Line
-	3975 2975 4275 2975
+	3975 2975 4150 2975
+Wire Wire Line
+	4150 2975 4275 2975
 Wire Wire Line
 	4150 2900 4150 2975
 Connection ~ 4150 2975
 Wire Wire Line
-	3975 2575 4275 2575
+	3975 2575 4150 2575
+Wire Wire Line
+	4150 2575 4275 2575
 Wire Wire Line
 	4150 2600 4150 2575
 Connection ~ 4150 2575
 Wire Wire Line
 	3650 2975 3675 2975
 Wire Wire Line
-	3650 2575 3650 2975
+	3650 2575 3650 2725
+Wire Wire Line
+	3650 2725 3650 2975
 Wire Wire Line
 	3650 2575 3675 2575
 Wire Wire Line
@@ -251,9 +263,13 @@ Wire Wire Line
 	3525 2725 3650 2725
 Connection ~ 3650 2725
 Wire Wire Line
-	2400 5675 2400 5600
+	2400 5675 2400 5625
 Wire Wire Line
-	2400 5225 2400 5300
+	2400 5625 2400 5600
+Wire Wire Line
+	2400 5225 2400 5275
+Wire Wire Line
+	2400 5275 2400 5300
 $Comp
 L +5V #PWR016
 U 1 1 587530B7
@@ -400,7 +416,11 @@ Text HLabel 3550 3375 0    60   Input ~ 0
 AREF
 Connection ~ 3975 3375
 Wire Wire Line
-	3550 3375 4275 3375
+	3550 3375 3600 3375
+Wire Wire Line
+	3600 3375 3975 3375
+Wire Wire Line
+	3975 3375 4275 3375
 Wire Wire Line
 	5075 1875 5075 1775
 $Comp
@@ -442,7 +462,9 @@ Wire Wire Line
 	5175 1775 5175 1725
 Connection ~ 5175 1775
 Wire Wire Line
-	5075 5900 5275 5900
+	5075 5900 5125 5900
+Wire Wire Line
+	5125 5900 5275 5900
 Connection ~ 5125 5900
 $Comp
 L ATMEGA1284P-P IC1
@@ -456,7 +478,9 @@ F 3 "" H 5275 3875 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5075 1775 5275 1775
+	5075 1775 5175 1775
+Wire Wire Line
+	5175 1775 5275 1775
 Wire Wire Line
 	2700 5300 2700 5275
 Wire Wire Line
@@ -469,6 +493,8 @@ Wire Wire Line
 Connection ~ 2400 5625
 Text Notes 2350 1150 0    60   ~ 0
 ajouter une pile avec une comparateur pour isoler le micro lorsqu'aucune source d'alimentation n'est disponible pour que le rtc continue à tourner
-Text Notes 7175 4650 0    60   ~ 0
-FREE
+Text HLabel 6525 4575 2    60   Input ~ 0
+PC6
+Text HLabel 6525 4675 2    60   Input ~ 0
+PC7
 $EndSCHEMATC

@@ -302,6 +302,8 @@ F30 "PD7" I R 2650 5500 60
 F31 "RESET" I L 1575 2850 60 
 F32 "AREF" I L 1575 3450 60 
 F33 "PC4" I R 2650 4325 60 
+F34 "PC6" I R 2650 4525 60 
+F35 "PC7" I R 2650 4625 60 
 $EndSheet
 Text Label 3275 3550 2    60   ~ 0
 D11-MOSI
@@ -806,4 +808,12 @@ Wire Wire Line
 Connection ~ 4850 3250
 Text Label 5700 2750 0    60   ~ 0
 ck_rtc
+Wire Wire Line
+	2650 4525 3275 4525
+Wire Wire Line
+	2650 4625 3275 4625
+Text Label 3275 4525 2    60   ~ 0
+D28
+Text Label 3275 4625 2    60   ~ 0
+D29
 $EndSCHEMATC
