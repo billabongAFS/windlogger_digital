@@ -21,8 +21,8 @@ The feeder is responsible for providing energy to the components of the data log
 
 ![enter image description here](https://lh3.googleusercontent.com/g3tH5ELa8TtkwIyGOJ0LqK-mRGPgBK3ph_msIWE-Q5WaEuGkOla4WqQqZlu15CQhOwbs5YNX-Ps=s0 "The characteristics of the data logger")
    
-    **Table 2: The components of this block** 
-     ![enter image description here](https://lh3.googleusercontent.com/TaLKtB9eaTHH4sF5o8txQ_EKrYjgiz3dU7MNMmsvEly-KSusKFy7GeeFxsVjl5I1TuD9kl-nyD0=s0 "Table 2: The components of this block")  
+
+![enter image description here](https://lh3.googleusercontent.com/TaLKtB9eaTHH4sF5o8txQ_EKrYjgiz3dU7MNMmsvEly-KSusKFy7GeeFxsVjl5I1TuD9kl-nyD0=s0 "Table 2: The components of this block")  
 
 
 The component map below shows where the components of the feeder are placed on the digital board.  
