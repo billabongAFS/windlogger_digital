@@ -23,9 +23,10 @@ The feeder is responsible for providing energy to the components of the data log
    
 
 
-     ![enter image description here](https://lh3.googleusercontent.com/TaLKtB9eaTHH4sF5o8txQ_EKrYjgiz3dU7MNMmsvEly-KSusKFy7GeeFxsVjl5I1TuD9kl-nyD0=s0 "Table 2: The components of this block")  
+![](https://photos.google.com/photo/AF1QipOmPFQ5S3dq41mmf15dLz6R6hOdzhRWsyUSzG6M)
 
 The component map below shows where the components of the feeder are placed on the digital board.  
+
 ![](https://photos.google.com/photo/AF1QipPgoMic25f_fzLyNF4079B6fSFCaPeRkCscH3S-)
 
 
@@ -127,6 +128,7 @@ The components relative to this block are shown in the ﬁgur below.
 3. **Solder the LED, resistance, C4,C5 and C6** - Solder the rest of the components BEFORE soldering the Microcontroller.
 
 4. **Solder the ATMEGA1284P-P** microcontroller-Solder the Microcontroller being careful to not use too much solder.
+
 ![enter image description here](https://lh3.googleusercontent.com/jGGx7fm14z-ME-YdsyrdE9cGz0qpdpKvrKMtoKn2slLI0_8pdtjy6wtRgeVYZYN6AbqPieRv0ww "Figure 12: The microcontroller and connectors soldered onto the digital board")
 
 5. **Solder the digital board connectors**- Soldering the connectors can be quite challenging. **BE SURE THAT THE CONNECTOR IS VERTICAL AND THEN SOLDER ONE PAD TO HOLD IT IN PLACE.** Once the connector is ﬁrmly in place, solder the other pads.
